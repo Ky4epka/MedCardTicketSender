@@ -75,6 +75,7 @@ namespace TicketSender
             TicketManager.Instance.OnSendingSuccess += (s) =>
             {
                 ShowMessage("OK", MessageType.True);
+                MessageBox.Show("Отправлено успешно.", "Статус", MessageBoxButtons.OK, MessageBoxIcon.Information);
             };
 
             TicketManager.Instance.OnSendingError += (s, e) =>
